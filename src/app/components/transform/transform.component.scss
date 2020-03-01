@@ -1,0 +1,33 @@
+.plate {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #DEDEDE;
+
+  .plate--image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .plate--mover {
+    width: 100px;
+    height: 100px;
+    transition: all 2s linear 0s;
+    background-color: #0000FF;
+  }
+
+  .plate--mover__translated {
+    transform: translate(900px, 0);
+  }
+
+  .plate--mover__rotated {
+    transform: rotate(720deg);
+  }
+
+  .plate--mover__scaled {
+    transform: scale(2);
+  }
+
+  .plate--mover__skewed {
+    transform: skew(120deg, 120deg);
+  }
+}

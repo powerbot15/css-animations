@@ -1,0 +1,14 @@
+.title {
+  text-align: center;
+}
+.subtitle {
+  color: #A1A1A1;
+  margin-left: 1024px;
+  transition: margin-left 3s linear 0s;
+  text-align: center;
+  width: 100%;
+
+  &.subtitle__animated {
+    margin-left: 0;
+  }
+}
