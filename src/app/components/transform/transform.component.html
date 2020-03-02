@@ -1,40 +1,42 @@
-<app-app-header></app-app-header>
-
-<main>
-  <section class="plate">
-    <h3>Translate</h3>
-    <div class="plate__keeper">
-      <div class="plate__mover" [ngClass]="{'plate__mover--translated': translated}">
-        <img class="plate__image" src="assets/images/picture.jpg">
+<main class="transforms">
+  <div>
+    <section class="plate">
+      <h3>Translate <br> <code>translate(250px, 0);</code></h3>
+      <div class="plate__keeper">
+        <div class="plate__mover" [ngClass]="{'plate__mover--translated': translated}">
+          <img class="plate__image" src="assets/images/picture.jpg">
+        </div>
       </div>
-    </div>
-    <button class="btn btn--transform" (click)="startAnimation('translated')">Animate</button>
-  </section>
-  <section class="plate">
-    <h3>Rotate</h3>
-    <div class="plate__keeper">
-      <div class="plate__mover" [ngClass]="{'plate__mover--rotated': rotated}">
-        <img class="plate__image" src="assets/images/picture.jpg">
+      <button class="btn btn--transform" (click)="startAnimation('translated')">Animate</button>
+    </section>
+    <section class="plate">
+      <h3>Rotate <br> <code>rotate(720deg);</code></h3>
+      <div class="plate__keeper">
+        <div class="plate__mover" [ngClass]="{'plate__mover--rotated': rotated}">
+          <img class="plate__image" src="assets/images/picture.jpg">
+        </div>
       </div>
-    </div>
-    <button class="btn btn--transform" (click)="startAnimation('rotated')">Animate</button>
-  </section>
-  <section class="plate">
-    <h3>Scale</h3>
-    <div class="plate__keeper">
-      <div class="plate__mover plate__mover--origin" [ngClass]="{'plate__mover--scaled': scaled}">
-        <img class="plate__image" src="assets/images/picture.jpg">
+      <button class="btn btn--transform" (click)="startAnimation('rotated')">Animate</button>
+    </section>
+  </div>
+  <div>
+    <section class="plate">
+      <h3>Scale <br> <code>scale(2)</code></h3>
+      <div class="plate__keeper">
+        <div class="plate__mover plate__mover--origin" [ngClass]="{'plate__mover--scaled': scaled}">
+          <img class="plate__image" src="assets/images/picture.jpg">
+        </div>
       </div>
-    </div>
-    <button class="btn btn--transform" (click)="startAnimation('scaled')">Animate</button>
-  </section>
-  <section class="plate">
-    <h3>Skew</h3>
-    <div class="plate__keeper">
-      <div class="plate__mover" [ngClass]="{'plate__mover--skewed': skewed}">
-        <img class="plate__image" src="assets/images/picture.jpg">
+      <button class="btn btn--transform" (click)="startAnimation('scaled')">Animate</button>
+    </section>
+    <section class="plate">
+      <h3>Skew <br> <code>skew(120deg, -120deg);</code></h3>
+      <div class="plate__keeper">
+        <div class="plate__mover" [ngClass]="{'plate__mover--skewed': skewed}">
+          <img class="plate__image" src="assets/images/picture.jpg">
+        </div>
       </div>
-    </div>
-    <button class="btn btn--transform" (click)="startAnimation('skewed')">Animate</button>
-  </section>
+      <button class="btn btn--transform" (click)="startAnimation('skewed')">Animate</button>
+    </section>
+  </div>
 </main>

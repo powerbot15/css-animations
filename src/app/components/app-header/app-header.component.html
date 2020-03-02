@@ -1,7 +1,29 @@
-<h1 class="title">CSS Animations</h1>
-<h2
-  class="subtitle"
-  [ngClass]="{subtitle__animated: animate}"
->
-  This is a simple example of css transition property
-</h2>
+<header>
+  <h1 class="title">CSS Animations</h1>
+  <h2
+    class="subtitle"
+    [ngClass]="{subtitle__animated: animate}"
+  >
+    This is a simple example of css transition property
+  </h2>
+</header>
+<nav>
+  <ul class="navigation">
+    <li class="navigation__item">
+      <a [routerLink]="['/']">
+        Home
+      </a>
+    </li>
+    <li class="navigation__item">
+      <a [routerLink]="['/transform']">
+        CSS Transform examples
+      </a>
+    </li>
+    <li class="navigation__item">
+      <a [routerLink]="['/transform3d']">
+        CSS Transform 3D
+      </a>
+    </li>
+  </ul>
+</nav>
+

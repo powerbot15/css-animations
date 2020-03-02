@@ -1,3 +1,11 @@
+.transforms {
+  display: flex;
+  height: calc(100vh - 200px);
+
+  & > * {
+    width: 50%;
+  }
+}
 .plate {
   padding: 20px;
   //text-align: center;
@@ -20,7 +28,7 @@
   }
 
   .plate__mover--translated {
-    transform: translate(900px, 0);
+    transform: translate(250px, 0);
   }
 
   .plate__mover--rotated {

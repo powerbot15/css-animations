@@ -12,3 +12,22 @@
     margin-left: 0;
   }
 }
+
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+  justify-content: center;
+
+  .navigation__item {
+    padding: 10px 20px;
+    border-left: 1px solid #DEDEDE;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+
+    &:last-of-type {
+      border-right: 1px solid #DEDEDE;
+    }
+  }
+}
