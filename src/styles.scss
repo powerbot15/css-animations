@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+.btn {
+  background-color: #3498db;
+  color: #ecf0f1;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: 700;
+
+  &:hover {
+    background-color: #f1c40f;
+    color: #2c3e50;
+  }
+  &:focus {
+    outline: none;
+  }
+
+  &:first-of-type {
+    margin-right: 30px;
+  }
+
+  &.btn--transform {
+    transition: all 0.3s linear 0s;
+  }
+
+}

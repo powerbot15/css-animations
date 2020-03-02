@@ -17,4 +17,11 @@ export class TransformComponent implements OnInit {
   ngOnInit() {
   }
 
+  public startAnimation(property: string) {
+    this[property] = true;
+    setTimeout(() => {
+      this[property] = false;
+    }, 600);
+  }
+
 }
