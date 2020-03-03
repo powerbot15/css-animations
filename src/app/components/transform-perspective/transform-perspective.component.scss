@@ -9,6 +9,7 @@
   width: 200px;
   height: 200px;
   margin: 15px;
+  cursor: pointer;
 
   &:hover {
     .scene__front-wrap {
@@ -40,6 +41,8 @@
   }
 
   .scene__front {
+    display: flex;
+    align-items: center;
     background-color: #155263;
     color: #FFFFFF;
   }

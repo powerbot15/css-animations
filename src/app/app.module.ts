@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { TransformComponent } from './components/transform/transform.component';
 import { AppHeaderComponent } from './components/app-header/app-header.component';
 import { TransformPerspectiveComponent } from './components/transform-perspective/transform-perspective.component';
+import { KeyframesComponent } from './components/keyframes/keyframes.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TransformPerspectiveComponent } from './components/transform-perspectiv
     HomeComponent,
     TransformComponent,
     AppHeaderComponent,
-    TransformPerspectiveComponent
+    TransformPerspectiveComponent,
+    KeyframesComponent
   ],
   imports: [
     BrowserModule,

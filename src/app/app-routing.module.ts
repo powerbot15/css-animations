@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { TransformComponent } from './components/transform/transform.component';
 import { TransformPerspectiveComponent } from './components/transform-perspective/transform-perspective.component';
+import { KeyframesComponent } from './components/keyframes/keyframes.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'transform3d',
     component: TransformPerspectiveComponent
+  },
+  {
+    path: 'keyframes',
+    component: KeyframesComponent
   }
 ];
 
